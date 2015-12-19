@@ -61,7 +61,7 @@
                                 </connections>
                             </button>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="vqH-MS-ZmF">
-                                <rect key="frame" x="20" y="279" width="560" height="321"/>
+                                <rect key="frame" x="20" y="279" width="560" height="261"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <connections>
                                     <outlet property="dataSource" destination="BYZ-38-t0r" id="R8E-vD-Njx"/>
@@ -69,13 +69,13 @@
                                 </connections>
                             </tableView>
                         </subviews>
-                        <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                        <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstItem="vqH-MS-ZmF" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="2vO-1Q-BZr"/>
                             <constraint firstAttribute="trailingMargin" secondItem="SDG-hu-oWR" secondAttribute="trailing" constant="45" id="ETE-Fe-31x"/>
                             <constraint firstAttribute="trailingMargin" secondItem="Nf7-u3-Sjp" secondAttribute="trailing" constant="-20" id="Pe9-4a-JJv"/>
                             <constraint firstAttribute="trailingMargin" secondItem="vqH-MS-ZmF" secondAttribute="trailing" id="Q9a-7c-GR6"/>
-                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="vqH-MS-ZmF" secondAttribute="bottom" id="Tnx-60-ERu"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="vqH-MS-ZmF" secondAttribute="bottom" constant="60" id="Tnx-60-ERu"/>
                             <constraint firstItem="KPW-oE-nwV" firstAttribute="top" secondItem="Nf7-u3-Sjp" secondAttribute="bottom" id="VPV-BF-44h"/>
                             <constraint firstItem="KPW-oE-nwV" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="Vw2-lo-QCa"/>
                             <constraint firstItem="Tfk-sK-37T" firstAttribute="top" secondItem="KPW-oE-nwV" secondAttribute="bottom" constant="30" id="XII-bK-EzE"/>
