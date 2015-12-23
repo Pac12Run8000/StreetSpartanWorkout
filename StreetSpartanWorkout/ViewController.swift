@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import AVFoundation
 
 class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     var timer = NSTimer()
@@ -15,6 +16,12 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     var fractions:Int = 0
     var startStopWatch:Bool = true
     var stopWatchString:String = ""
+    
+    
+    //audio variable
+    var audioPlayer: AVAudioPlayer!
+    
+    
     
     
     let arrayWorkout:[String] = ["4 Sets x 8 Chin Ups", "4 Sets x 8 Pull Ups", "4 Sets x 6 Barbel Front Squat", "4 Sets x 6 Dive Bombers", "2 Sets x 18 Calf Raises", "4 Sets x 6 Dips", "4 Sets x 8 Bench Press", "3 Sets x 15 Push Ups", "3 Sets x 15 Diamond Push Ups", "3 Sets x 15 Military Press", "3 Sets x 15 Chin Up (Negatives)", "4 Sets x 8 Pull Up (Negatives)"]
@@ -36,6 +43,8 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
             self.btnStartStop.setTitle("Start", forState: UIControlState.Normal)
         }
     }
+    
+    
     func UpdateStopWatch() {
         fractions += 1
         if (fractions == 100) {
@@ -55,6 +64,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
             stopWatchString = "00:00:00"
             lblTimeDisplay.text = stopWatchString
             timer.invalidate()
+            self.playVes()
             
             let myAlert = UIAlertController(title: "Workout Alert", message: "30 seconds have passed. Times Up!", preferredStyle: UIAlertControllerStyle.Alert)
             let myAction = UIAlertAction(title: "Start your next set", style: UIAlertActionStyle.Cancel, handler: { (ACTION) -> Void in
@@ -62,6 +72,8 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
                 if (self.startStopWatch == false) {
                     self.btnStartStop.setTitle("Start", forState: UIControlState.Normal)
                     self.startStopWatch = true
+                    self.audioPlayer.stop()
+                    
                 }
             })
             myAlert.addAction(myAction)
@@ -73,7 +85,21 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         let minutesString = minutes > 9 ? "\(minutes)" : "0\(minutes)"
         stopWatchString = "\(minutesString):\(secondString):\(fractionString)"
         self.lblTimeDisplay.text = stopWatchString
+        
+        
     }
+    
+    //Audio issues
+    func playVes() {
+        do {
+            self.audioPlayer =  try AVAudioPlayer(contentsOfURL: NSURL(fileURLWithPath: NSBundle.mainBundle().pathForResource("72244__benboncan__alarm", ofType: "wav")!))
+            self.audioPlayer.play()
+            
+        } catch {
+            print("Error")
+        }
+    }
+    
     
     @IBAction func btnPressedReset(sender: AnyObject) {
         fractions = 0
