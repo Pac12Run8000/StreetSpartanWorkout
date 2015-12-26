@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9060" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="L2j-uZ-6zJ">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="L2j-uZ-6zJ">
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9051"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
@@ -125,7 +125,7 @@
                                 <constraints>
                                     <constraint firstAttribute="height" constant="105" id="ya5-v8-XNZ"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="70"/>
+                                <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="70"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -137,6 +137,9 @@
                                 </constraints>
                                 <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="22"/>
                                 <state key="normal" title="Start"/>
+                                <connections>
+                                    <action selector="btnPressedStartStop:" destination="sPU-lo-Dm3" eventType="touchUpInside" id="wkl-dk-NwU"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EYq-15-vJj">
                                 <rect key="frame" x="465" y="199" width="70" height="70"/>
@@ -146,10 +149,17 @@
                                 </constraints>
                                 <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="22"/>
                                 <state key="normal" title="Reset"/>
+                                <connections>
+                                    <action selector="btnPressedReset:" destination="sPU-lo-Dm3" eventType="touchUpInside" id="fcB-Ba-3sv"/>
+                                </connections>
                             </button>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="PDC-gn-CdJ">
                                 <rect key="frame" x="20" y="279" width="560" height="272"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="sPU-lo-Dm3" id="0SF-mj-uJw"/>
+                                    <outlet property="delegate" destination="sPU-lo-Dm3" id="Qy3-7J-4EG"/>
+                                </connections>
                             </tableView>
                         </subviews>
                         <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
@@ -171,6 +181,12 @@
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Item" badgeValue="second day" id="Hzc-Vd-m0Q"/>
+                    <connections>
+                        <outlet property="btnReset" destination="EYq-15-vJj" id="WVw-UG-7Zr"/>
+                        <outlet property="btnStartStop" destination="MGV-HO-FVC" id="fKz-si-QXP"/>
+                        <outlet property="lblTimerOutPut" destination="1ak-QT-OU4" id="122-tb-9iY"/>
+                        <outlet property="tblExercise" destination="PDC-gn-CdJ" id="PQO-DU-VvJ"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wvr-25-MgC" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -214,6 +230,9 @@
                                 </constraints>
                                 <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="22"/>
                                 <state key="normal" title="Start"/>
+                                <connections>
+                                    <action selector="btnPressedStart:" destination="YJV-Xe-DiZ" eventType="touchUpInside" id="oKi-Ag-Lf1"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="k47-Yw-3eg">
                                 <rect key="frame" x="465" y="199" width="70" height="70"/>
@@ -223,10 +242,17 @@
                                 </constraints>
                                 <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="22"/>
                                 <state key="normal" title="Reset"/>
+                                <connections>
+                                    <action selector="btnPressedReset:" destination="YJV-Xe-DiZ" eventType="touchUpInside" id="1a6-fj-wi4"/>
+                                </connections>
                             </button>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="P8l-vj-5gl">
                                 <rect key="frame" x="20" y="279" width="560" height="272"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="YJV-Xe-DiZ" id="nSC-n3-3rW"/>
+                                    <outlet property="delegate" destination="YJV-Xe-DiZ" id="ILm-bh-5WR"/>
+                                </connections>
                             </tableView>
                         </subviews>
                         <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
@@ -248,6 +274,11 @@
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Item" badgeValue="Third Day" id="Wv3-VV-ueM"/>
+                    <connections>
+                        <outlet property="btnReset" destination="k47-Yw-3eg" id="tgV-Fy-MPd"/>
+                        <outlet property="btnStartStop" destination="mSn-tN-9sM" id="FKL-sl-SkZ"/>
+                        <outlet property="lblTimerDisplay" destination="2fU-kj-VHH" id="Iej-3m-osJ"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="M7O-bd-gM6" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
