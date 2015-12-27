@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		C6313B5A1C28E4BF00179156 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C6313B591C28E4BF00179156 /* AVFoundation.framework */; };
 		C6875A841C2B17C400E2D72D /* 72244__benboncan__alarm.wav in Resources */ = {isa = PBXBuildFile; fileRef = C6875A831C2B17C400E2D72D /* 72244__benboncan__alarm.wav */; };
+		C6B2141B1C2F0C7C00D754F7 /* ForthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6B2141A1C2F0C7C00D754F7 /* ForthViewController.swift */; };
 		C6EAE8391C253CFF00481A8F /* ThirdViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6EAE8381C253CFF00481A8F /* ThirdViewController.swift */; };
 		C6EAE83B1C253D5D00481A8F /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6EAE83A1C253D5D00481A8F /* SecondViewController.swift */; };
 		C6F1FE791C1F8ED1004D9229 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6F1FE781C1F8ED1004D9229 /* AppDelegate.swift */; };
@@ -21,6 +22,7 @@
 /* Begin PBXFileReference section */
 		C6313B591C28E4BF00179156 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		C6875A831C2B17C400E2D72D /* 72244__benboncan__alarm.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = 72244__benboncan__alarm.wav; sourceTree = "<group>"; };
+		C6B2141A1C2F0C7C00D754F7 /* ForthViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ForthViewController.swift; sourceTree = "<group>"; };
 		C6EAE8381C253CFF00481A8F /* ThirdViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThirdViewController.swift; sourceTree = "<group>"; };
 		C6EAE83A1C253D5D00481A8F /* SecondViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
 		C6F1FE751C1F8ED1004D9229 /* StreetSpartanWorkout.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StreetSpartanWorkout.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -68,6 +70,7 @@
 				C6F1FE7A1C1F8ED1004D9229 /* ViewController.swift */,
 				C6875A831C2B17C400E2D72D /* 72244__benboncan__alarm.wav */,
 				C6F1FE7C1C1F8ED1004D9229 /* Main.storyboard */,
+				C6B2141A1C2F0C7C00D754F7 /* ForthViewController.swift */,
 				C6F1FE7F1C1F8ED1004D9229 /* Assets.xcassets */,
 				C6F1FE811C1F8ED1004D9229 /* LaunchScreen.storyboard */,
 				C6F1FE841C1F8ED1004D9229 /* Info.plist */,
@@ -153,6 +156,7 @@
 				C6F1FE7B1C1F8ED1004D9229 /* ViewController.swift in Sources */,
 				C6EAE8391C253CFF00481A8F /* ThirdViewController.swift in Sources */,
 				C6F1FE791C1F8ED1004D9229 /* AppDelegate.swift in Sources */,
+				C6B2141B1C2F0C7C00D754F7 /* ForthViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

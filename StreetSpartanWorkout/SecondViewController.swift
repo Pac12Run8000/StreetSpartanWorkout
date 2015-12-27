@@ -103,6 +103,8 @@ class SecondViewController: UIViewController, UITableViewDelegate, UITableViewDa
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.tblExercise.layer.cornerRadius = 10
+        
         self.btnStartStop.layer.borderWidth = 3
         self.btnStartStop.layer.borderColor = UIColor.blackColor().CGColor
         self.btnStartStop.layer.cornerRadius = self.btnStartStop.frame.size.width / 2

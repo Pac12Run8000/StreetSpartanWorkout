@@ -24,6 +24,8 @@ class ThirdViewController: UIViewController, UITableViewDataSource, UITableViewD
     @IBOutlet weak var lblTimerDisplay: UILabel!
     @IBOutlet weak var btnStartStop: UIButton!
     @IBOutlet weak var btnReset: UIButton!
+    @IBOutlet weak var tblWorkout: UITableView!
+    
     @IBAction func btnPressedStart(sender: AnyObject) {
         if(startStopWatch == true) {
             timer = NSTimer.scheduledTimerWithTimeInterval(0.01, target: self, selector: Selector("UpdateStopWatch"), userInfo: nil, repeats: true)
@@ -47,6 +49,9 @@ class ThirdViewController: UIViewController, UITableViewDataSource, UITableViewD
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        self.tblWorkout.layer.cornerRadius = 10
+        
         self.btnStartStop.layer.borderWidth = 3
         self.btnStartStop.layer.borderColor = UIColor.blackColor().CGColor
         self.btnStartStop.layer.cornerRadius = self.btnStartStop.frame.size.width / 2
