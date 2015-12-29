@@ -104,12 +104,12 @@ class SecondViewController: UIViewController, UITableViewDelegate, UITableViewDa
     override func viewDidLoad() {
         super.viewDidLoad()
         self.tblExercise.layer.cornerRadius = 10
-        
-        self.btnStartStop.layer.borderWidth = 3
+         self.view.layer.backgroundColor = UIColor(red:0.24, green:0.40, blue:0.69, alpha:1.0).CGColor
+        self.btnStartStop.layer.borderWidth = 2
         self.btnStartStop.layer.borderColor = UIColor.blackColor().CGColor
         self.btnStartStop.layer.cornerRadius = self.btnStartStop.frame.size.width / 2
         
-        self.btnReset.layer.borderWidth = 3
+        self.btnReset.layer.borderWidth = 2
         self.btnReset.layer.borderColor = UIColor.blackColor().CGColor
         self.btnReset.layer.cornerRadius = self.btnReset.frame.size.width / 2
         
@@ -135,6 +135,7 @@ class SecondViewController: UIViewController, UITableViewDelegate, UITableViewDa
         let cell = UITableViewCell(style: UITableViewCellStyle.Subtitle, reuseIdentifier: "Cell")
         cell.textLabel!.text = arrayWorkout[indexPath.row]
         cell.detailTextLabel?.text = "[45 second rest]"
+        cell.backgroundColor = UIColor(red:0.60, green:0.71, blue:0.14, alpha:1.0)
         return cell
     }
     

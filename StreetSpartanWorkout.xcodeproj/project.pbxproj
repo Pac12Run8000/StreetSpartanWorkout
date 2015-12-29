@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		C6313B5A1C28E4BF00179156 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C6313B591C28E4BF00179156 /* AVFoundation.framework */; };
+		C66E4FAB1C323E1E00199F1C /* ffStrengthSplash.png in Resources */ = {isa = PBXBuildFile; fileRef = C66E4FAA1C323E1E00199F1C /* ffStrengthSplash.png */; };
 		C6875A841C2B17C400E2D72D /* 72244__benboncan__alarm.wav in Resources */ = {isa = PBXBuildFile; fileRef = C6875A831C2B17C400E2D72D /* 72244__benboncan__alarm.wav */; };
 		C6B2141B1C2F0C7C00D754F7 /* ForthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6B2141A1C2F0C7C00D754F7 /* ForthViewController.swift */; };
 		C6EAE8391C253CFF00481A8F /* ThirdViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6EAE8381C253CFF00481A8F /* ThirdViewController.swift */; };
@@ -21,6 +22,7 @@
 
 /* Begin PBXFileReference section */
 		C6313B591C28E4BF00179156 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		C66E4FAA1C323E1E00199F1C /* ffStrengthSplash.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ffStrengthSplash.png; sourceTree = "<group>"; };
 		C6875A831C2B17C400E2D72D /* 72244__benboncan__alarm.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = 72244__benboncan__alarm.wav; sourceTree = "<group>"; };
 		C6B2141A1C2F0C7C00D754F7 /* ForthViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ForthViewController.swift; sourceTree = "<group>"; };
 		C6EAE8381C253CFF00481A8F /* ThirdViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThirdViewController.swift; sourceTree = "<group>"; };
@@ -72,6 +74,7 @@
 				C6F1FE7C1C1F8ED1004D9229 /* Main.storyboard */,
 				C6B2141A1C2F0C7C00D754F7 /* ForthViewController.swift */,
 				C6F1FE7F1C1F8ED1004D9229 /* Assets.xcassets */,
+				C66E4FAA1C323E1E00199F1C /* ffStrengthSplash.png */,
 				C6F1FE811C1F8ED1004D9229 /* LaunchScreen.storyboard */,
 				C6F1FE841C1F8ED1004D9229 /* Info.plist */,
 				C6EAE8381C253CFF00481A8F /* ThirdViewController.swift */,
@@ -142,6 +145,7 @@
 				C6875A841C2B17C400E2D72D /* 72244__benboncan__alarm.wav in Resources */,
 				C6F1FE801C1F8ED1004D9229 /* Assets.xcassets in Resources */,
 				C6F1FE7E1C1F8ED1004D9229 /* Main.storyboard in Resources */,
+				C66E4FAB1C323E1E00199F1C /* ffStrengthSplash.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
