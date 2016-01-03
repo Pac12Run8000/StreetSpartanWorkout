@@ -56,7 +56,7 @@ class ForthViewController: UIViewController, UITableViewDelegate, UITableViewDat
         if (minutes == 1 && seconds == 30) {
             timer.invalidate()
             self.playVes()
-            let myAlert = UIAlertController(title: "Workout Alert", message: "^0 seconds have passed. Times Up!", preferredStyle: UIAlertControllerStyle.Alert)
+            let myAlert = UIAlertController(title: "Workout Alert", message: "90 seconds have passed. Times Up!", preferredStyle: UIAlertControllerStyle.Alert)
             let myAction = UIAlertAction(title: "Start your next set", style: UIAlertActionStyle.Cancel, handler: { (ACTION) -> Void in
                 
                 if (self.startStopWatch == false) {
@@ -115,7 +115,7 @@ class ForthViewController: UIViewController, UITableViewDelegate, UITableViewDat
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-    
+           
     }
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
